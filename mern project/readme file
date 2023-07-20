@@ -1,0 +1,4 @@
+after opening of the project repository copy all the code files incluide in the project. open the project with code editor vscode and split two
+terminals to run backend and frontend files together.
+in first terminal type cd frontend and after type npm start and in second terminal type cd backend and then npm start
+
