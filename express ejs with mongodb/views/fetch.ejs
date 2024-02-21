@@ -1,0 +1,39 @@
+<%- include("header"); %>
+<table class="table">
+    <thead>
+      <tr>
+        <th>sr no.</th>
+        <th>name</th>
+        <th>email</th>
+        <th>mobile</th>
+        <th>address</th>
+        <th>profile</th>
+        <th>password</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% usersList.forEach((val,i)=>{%>
+      <tr>
+        <th>1</th>
+        <td><%=val.name%></td>
+        <td><%=val.email%></td>
+        <td><%=val.mobile%></td>
+        <td><%=val.address%></td>
+        <td>
+          <img src="public/upload/<%=val.img%>" alt="" width="250" height="300"/>
+        </td>
+        <td><%=val.password%></td>
+        <td>
+        <a href="/deleteUser/<%=val._id%>"><button class="btn btn-danger">delete</button></a>  
+        <a href="/updateUser/<%=val._id%>"><button class="btn btn-warning">update</button></a> 
+        </td>
+      </tr>
+
+     <%})%>
+
+      
+
+   
+    </tbody>
+  </table>
+<%- include("footer"); %>
