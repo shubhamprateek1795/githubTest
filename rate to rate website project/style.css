@@ -1,0 +1,50 @@
+body  {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    overflow-x: hidden;
+  }
+
+  /* Styling for the navbar */
+  .top-navbar {
+   
+    color: rgb(14, 12, 12);
+    /* padding: 5px 5px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Contact information style */
+  .contact-info {
+    display: flex;
+    gap: 15px;
+  }
+
+  /* Style for individual contact details */
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+  }
+
+  /* Style for contact icons */
+  .contact-item i {
+    font-size: 13px;
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .contact-info {
+      flex-direction: column;
+      gap: 16px;
+    }
+  }
+  .carousel-cell img:hover{
+   transform: scale(1.1);
+  }
+
+
+
+
